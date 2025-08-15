@@ -1,0 +1,185 @@
+body{
+    
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+   background: linear-gradient(to right, #e6de3b, #62cce3, #f0f0f0, #e6de3b);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+.container{
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: blue 0px 0px 10px;
+}
+
+.name, .email ,.msg{
+    width: 60%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: rgb(234, 231, 231) 0px 0px 10px;
+}
+
+.btn, .btn2 {
+    width: 30%;
+    padding: 5px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    box-shadow: rgb(153, 229, 153);
+   
+}
+.btn:hover, .btn2:hover {
+    background-color: #218838;
+}
+
+.btn2 {
+    background-color: #dc3545;
+}
+.btn2:hover {
+    background-color: #c82333;
+}
+
+nav {
+    display: flex;
+    background-color: #444;
+    background: linear-gradient(to right, #444, #222);
+}
+nav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    flex: 1; /* Even spacing for all links */
+}
+nav a:hover {
+    background-color: #202020;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+
+
+
+@media (max-width: 400px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+.main-content{
+    size: 0cm;
+    padding: 20px;
+    text-align: center;
+}
+
+/* To-Do Container */
+.todo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Task Card */
+.task {
+    min-width: 220px;
+    max-width: 280px;
+    padding: 15px 20px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Hover Animation */
+.task:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Action Button */
+.button {
+    width: 120px;
+    height: 40px;
+    background: linear-gradient(45deg, #007bff, #4da3ff);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Button Hover Effect */
+.button:hover {
+    background: linear-gradient(45deg, #0056b3, #007bff);
+    transform: scale(1.05);
+}
+
+/* Optional delete/edit icons inside task */
+.task .icons {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.task .icons i {
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.task .icons i:hover {
+    color: #ff4b5c;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #2e2d2d;
+    color: white;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
